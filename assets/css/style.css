@@ -1,0 +1,174 @@
+html,
+body{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    line-height: 1.5;
+	scroll-behavior: smooth;
+}
+.margin-top{
+	margin-top: 100px;
+}
+.hamburger, .is-active{ /* fixes issue with bootstrap navbar and hamburger */
+    padding: inherit;
+}
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after{
+    background-color: black;
+}
+.colorToggle{
+    background-color: rgb(57, 199, 255);
+}
+.navbar{
+    background-color: none;
+    transition: background 300ms;
+}
+.navbar.scrolled{
+    background-color: rgb(57, 199, 255);
+    transition: background 300ms;
+}
+#mainNavbar a{
+    color: black;
+}
+.nav-item{
+    border-radius: 6px;
+}
+button, .btn{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.btn-light{
+    background-color: lightblue;
+    border-color: lightblue;
+}
+.btn-light:hover{
+    background-color: cornflowerblue;
+    border-color: cornflowerblue;
+}
+.jumbotron{
+    min-height: 650px;
+    height: 100vh;
+    max-height: 1000px;
+    background-image: radial-gradient(rgb(224, 243, 255), rgb(135, 206, 250), rgb(98, 191, 228));
+    margin-bottom: 0;
+}
+/* .alignfull {
+	margin: auto;
+	max-width: 100%;
+	width: 100%;
+}
+.alignwide {
+	margin: auto;
+	max-width: 75vw;
+	width: 75vw;
+} */
+footer{
+    background-color: rgba(0, 0, 0, 0.90);
+    color: white;
+}
+footer .col-md{
+    background-color: rgb(45, 45, 45);
+    padding: 1em;
+    margin: 1em;
+    border-radius: 15px;
+}
+footer ol, footer ul, footer dl{
+    width: fit-content;
+}
+
+/*////////////////////*/
+
+.scroll{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+	/* display: none; */
+}
+.scroll > a{
+    border-radius: 10px;
+	text-decoration: none;
+	font-size: 2.05em;
+	background-color: rgba(0,0,0,0.25);
+	color: lightyellow;
+	display: block;
+	text-align: center;
+    height: 50px;
+    width: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.scroll > a:hover{
+	background-color: rgba(0,0,0,0.35);
+	color: lightgreen;
+}
+.scroll > a:focus{
+	color: lightyellow;
+}
+
+/*////////////////////*/
+
+/* Extra small devices (phones, 350px and down) */
+@media only screen and (max-width: 350px) {
+    .headline{
+        margin-top: 5vh;
+    }
+} 
+
+/* Extra small devices (phones, 350px and up) */
+@media only screen and (min-width: 350px) {
+    .headline{
+        margin-top: 10vh;
+    }
+} 
+
+/* Small devices (portrait tablets and large phones, 568px and up) */
+@media only screen and (min-width: 568px) {
+    .nav-item{
+        width: initial;
+    }
+    .headline{
+        margin-top: 10vh;
+    }
+    .wp-block-column:not(:first-child), .wp-block-column:nth-child(2n) {
+        margin-left: 0;
+    }
+    .wp-block-column:not(:last-child) {
+        margin-right: 0;
+    }
+    .wp-block-column:nth-child(odd) {
+        margin-right: 0;
+    }
+    .wp-block-column {
+        flex-basis: 100%;
+        flex-grow: initial;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .nav-item{
+        width: 100px;
+    }
+    .headline{
+        margin-top: 15vh;
+    }
+    div.wp-block-columns {
+        flex-wrap: nowrap;
+    }
+    .wp-block-column:not(:first-child), .wp-block-column:nth-child(2n) {
+        margin-left: 32px;
+    }
+    .wp-block-column:not(:last-child) {
+        margin-right: 32px;
+    }
+    .wp-block-column:nth-child(odd) {
+        margin-right: 32px;
+    }
+    .wp-block-column {
+        flex-basis: 50%;
+        flex-grow: 0;
+    }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
