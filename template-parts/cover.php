@@ -6,7 +6,9 @@
             <hr class="my-3">
             <br>
             <p class="lead">Wordpress and Bootstrap 4 theme with a front page jumbotron cover.</p>
-            <p>By Mike</p>
+            <p>
+                <a href="https://github.com/mppatterson84/mikes-bootstrap-4-wordpress-theme" target=_blank class="btn btn-success">GitHub</a>
+            </p>
             <br>
             <p class="lead">
                 <a class="btn btn-primary btn-lg animated pulse slower infinite" href="about" role="button">Find Out More</a>
