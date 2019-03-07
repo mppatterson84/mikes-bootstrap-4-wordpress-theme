@@ -60,11 +60,11 @@ $(document).scroll(function () {
 // function pageLoad(){
     //hides the scroll to top button when the page loads
     //this is needed to help with the animation css classes
-//     if(window.pageYOffset <= $("#mainNavbar").height()){
-//         $(".scroll").hide();
-//     }
-// }
-
+    //     if(window.pageYOffset <= $("#mainNavbar").height()){
+        //         $(".scroll").hide();
+        //     }
+        // }
+        
 $(document).ready(function () {
     if(document.getElementById("wpadminbar")){
         navbar.classList.add("margin-top-32");
