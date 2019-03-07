@@ -46,25 +46,12 @@ $(window).resize(function () {
 //handles the visability and animation css classes for the
 //popup scroll to top button
 $(document).scroll(function () {
-    if (window.pageYOffset > $("#mainNavbar").height()) {
-        $(".scroll").show();
-    }
     var $nav = $("#mainNavbar");
     $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
     $(".scroll").toggleClass("fadeInUp", window.pageYOffset > $nav.height());
     $(".scroll").toggleClass("fadeOutDown", window.pageYOffset <= $nav.height());
 });
 
-//does stuff when the page loads
-// pageLoad();
-// function pageLoad(){
-    //hides the scroll to top button when the page loads
-    //this is needed to help with the animation css classes
-    //     if(window.pageYOffset <= $("#mainNavbar").height()){
-        //         $(".scroll").hide();
-        //     }
-        // }
-        
 $(document).ready(function () {
     if(document.getElementById("wpadminbar")){
         navbar.classList.add("margin-top-32");
