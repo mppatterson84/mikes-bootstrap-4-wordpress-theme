@@ -3,7 +3,7 @@
 <?php get_template_part( 'template-parts/cover' ); ?>
 
     <!-- the loop -->
-    <div class="container theLoop margin-top">
+    <div class="container theLoop margin-top-100">
     <?php if ( have_posts() ) : while ( have_posts() ) :   the_post(); ?>
         <!-- <h2>
             <a href="< ?php the_permalink() ?>">

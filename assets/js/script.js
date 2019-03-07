@@ -3,6 +3,7 @@ var navbar = document.querySelector(".navbar");
 var navbarNav = document.querySelector(".navbar-nav");
 var navbarCollapse = document.querySelector(".navbar-collapse");
 var theLoop = document.querySelector(".wp-block-columns");
+var wpadminbar = document.querySelector("#wpadminbar");
 
 //handles the hamburger button click, animation css classes for the button and menu,
 //and the navbar background color css classes
@@ -64,3 +65,9 @@ function pageLoad(){
         $(".scroll").hide();
     }
 }
+
+$(document).ready(function () {
+    if(document.getElementById("wpadminbar")){
+        navbar.classList.add("margin-top-32");
+    }
+});
