@@ -53,7 +53,7 @@ $(document).scroll(function () {
     $scroll.toggleClass("fadeInUp", window.pageYOffset > $nav.height());
     $scroll.toggleClass("fadeOutDown", window.pageYOffset <= $nav.height());
     $fas.toggleClass("fa-arrow-up", window.pageYOffset > $nav.height());
-    // // $fas.toggleClass("fa-eye", window.pageYOffset <= $nav.height());
+    $fas.toggleClass("fa-arrow-down", window.pageYOffset <= $nav.height());
 });
 
 $(document).ready(function () {
