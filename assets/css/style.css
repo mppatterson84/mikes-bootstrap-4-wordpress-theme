@@ -35,7 +35,7 @@ body{
 .nav-item{
     border-radius: 6px;
 }
-button, .btn{
+.box-shadow{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .btn-light{
@@ -83,6 +83,7 @@ footer ol, footer ul, footer dl{
     position: fixed;
     bottom: 20px;
     right: 20px;
+    border-radius: 10px;
 }
 .scroll > a{
     border-radius: 10px;
