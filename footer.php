@@ -49,7 +49,8 @@
 <!-- bottom of body -->
 
     <!-- scroll button -->
-    <div class="scroll box-shadow animated fadeOutDown"><a href="#"><i class="fas fa-arrow-up"></i></a></div>
+    <div class="scroll box-shadow animated fadeOutDown"><a href="#"><i class="fas fa-dove"></i></a></div>
+    <!-- fa-arrow-up -->
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 

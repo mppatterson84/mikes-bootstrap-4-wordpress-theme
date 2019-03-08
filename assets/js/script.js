@@ -47,9 +47,13 @@ $(window).resize(function () {
 //popup scroll to top button
 $(document).scroll(function () {
     var $nav = $("#mainNavbar");
+    var $scroll = $(".scroll");
+    var $fas = $(".fas");
     $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
-    $(".scroll").toggleClass("fadeInUp", window.pageYOffset > $nav.height());
-    $(".scroll").toggleClass("fadeOutDown", window.pageYOffset <= $nav.height());
+    $scroll.toggleClass("fadeInUp", window.pageYOffset > $nav.height());
+    $scroll.toggleClass("fadeOutDown", window.pageYOffset <= $nav.height());
+    $fas.toggleClass("fa-arrow-up", window.pageYOffset > $nav.height());
+    $fas.toggleClass("fa-dove", window.pageYOffset <= $nav.height());
 });
 
 $(document).ready(function () {
