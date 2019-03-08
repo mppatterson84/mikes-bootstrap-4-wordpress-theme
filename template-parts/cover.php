@@ -7,7 +7,7 @@
             <br>
             <p class="lead">Wordpress and Bootstrap 4 theme with a front page jumbotron cover.</p>
             <p>
-                <a href="https://github.com/mppatterson84/mikes-bootstrap-4-wordpress-theme" target=_blank class="btn btn-success button-shadow">GitHub</a>
+                <a href="https://github.com/mppatterson84/mikes-bootstrap-4-wordpress-theme" target=_blank class="btn btn-success box-shadow">GitHub</a>
             </p>
             <br>
             <p class="lead">
