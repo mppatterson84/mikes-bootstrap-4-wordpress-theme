@@ -1,7 +1,7 @@
  <footer class="margin-top-100">
         <div class="container">
             <div class="row py-5">
-                <div class="col-md">
+                <div class="col-md-6">
                     <?php
                         wp_nav_menu(
                             array(
