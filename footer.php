@@ -18,9 +18,9 @@
                             )
                         );
                     ?>
-                    <?php get_sidebar( 'footer1' ); ?>
+                    <?php get_sidebar( 'footer-left' ); ?>
                 </div>
-                <?php get_sidebar( 'footer2' ); ?>
+                <?php get_sidebar( 'footer-right' ); ?>
             </div>
         </div>
     </footer>

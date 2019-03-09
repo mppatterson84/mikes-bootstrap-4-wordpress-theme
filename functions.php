@@ -118,9 +118,9 @@ function my_register_sidebars() {
     );
     register_sidebar(
         array(
-            'id'            => 'footer1',
-            'name'          => __( 'footer1 Sidebar' ),
-            'description'   => __( 'The first footer sidebar for the theme.' ),
+            'id'            => 'footer-left',
+            'name'          => __( 'Left Footer Sidebar' ),
+            'description'   => __( 'The left footer sidebar for the theme.' ),
             'before_widget' => '<div id="%1$s" class="widget %2$s">',
             'after_widget'  => '</div>',
             'before_title'  => '<h3 class="widget-title">',
@@ -129,9 +129,9 @@ function my_register_sidebars() {
     );
     register_sidebar(
         array(
-            'id'            => 'footer2',
-            'name'          => __( 'footer2 Sidebar' ),
-            'description'   => __( 'The second footer sidebar for the theme.' ),
+            'id'            => 'footer-right',
+            'name'          => __( 'Right Footer Sidebar' ),
+            'description'   => __( 'The right footer sidebar for the theme.' ),
             'before_widget' => '<div id="%1$s" class="widget %2$s">',
             'after_widget'  => '</div>',
             'before_title'  => '<h3 class="widget-title">',
