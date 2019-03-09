@@ -101,3 +101,43 @@ function script()
 }
 add_action( 'wp_enqueue_scripts', 'script' );
 
+// <?php
+add_action( 'widgets_init', 'my_register_sidebars' );
+function my_register_sidebars() {
+    /* Register the 'primary' sidebar. */
+    register_sidebar(
+        array(
+            'id'            => 'primary',
+            'name'          => __( 'Primary Sidebar' ),
+            'description'   => __( 'The primary sidebar for the theme.' ),
+            'before_widget' => '<div id="%1$s" class="widget %2$s">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h3 class="widget-title">',
+            'after_title'   => '</h3>',
+        )
+    );
+    register_sidebar(
+        array(
+            'id'            => 'footer1',
+            'name'          => __( 'footer1 Sidebar' ),
+            'description'   => __( 'The first footer sidebar for the theme.' ),
+            'before_widget' => '<div id="%1$s" class="widget %2$s">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h3 class="widget-title">',
+            'after_title'   => '</h3>',
+        )
+    );
+    register_sidebar(
+        array(
+            'id'            => 'footer2',
+            'name'          => __( 'footer2 Sidebar' ),
+            'description'   => __( 'The second footer sidebar for the theme.' ),
+            'before_widget' => '<div id="%1$s" class="widget %2$s">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h3 class="widget-title">',
+            'after_title'   => '</h3>',
+        )
+    );
+    /* Repeat register_sidebar() code for additional sidebars. */
+}
+?>

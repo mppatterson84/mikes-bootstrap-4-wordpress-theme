@@ -1,6 +1,6 @@
  <footer class="margin-top-100">
         <div class="container">
-            <div class="row py-5 mt-3">
+            <div class="row py-5">
                 <div class="col-md">
                     <?php
                         wp_nav_menu(
@@ -18,28 +18,9 @@
                             )
                         );
                     ?>
+                    <?php get_sidebar( 'footer1' ); ?>
                 </div>
-                <div class="col-md">
-                    <ol class="mx-auto p-0">
-                        <li>List Item</li>
-                        <li>List Item</li>
-                        <li>List Item</li>
-                        <li>List Item</li>
-                        <li>List Item</li>
-                        <li>List Item</li>
-                        <li>List Item</li>
-                    </ol>
-                </div>
-                <div class="col-md">
-                    <dl class="mx-auto p-0">
-                        <dt>List Item</dt>
-                        <dd>List Item Description</dd>
-                        <dt>List Item</dt>
-                        <dd>List Item Description</dd>
-                        <dt>List Item</dt>
-                        <dd>List Item Description</dd>
-                    </dl>
-                </div>
+                <?php get_sidebar( 'footer2' ); ?>
             </div>
         </div>
     </footer>

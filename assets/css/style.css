@@ -67,9 +67,9 @@ footer{
     background-color: rgba(0, 0, 0, 0.90);
     color: white;
 }
-footer .col-md{
+footer .widget, footer #bs4navbarF{
     background-color: rgb(45, 45, 45);
-    padding: 1em;
+    padding: 2em;
     margin: 1em;
     border-radius: 15px;
 }
@@ -174,4 +174,8 @@ footer ol, footer ul, footer dl{
 @media only screen and (min-width: 992px) {} 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+    footer .container{
+        max-width: 1340px;
+    }
+}
