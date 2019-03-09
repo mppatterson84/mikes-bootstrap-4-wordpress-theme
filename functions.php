@@ -110,7 +110,7 @@ function my_register_sidebars() {
             'id'            => 'primary',
             'name'          => __( 'Primary Sidebar' ),
             'description'   => __( 'The primary sidebar for the theme.' ),
-            'before_widget' => '<div id="%1$s" class="widget %2$s">',
+            'before_widget' => '<div id="%1$s" class="widget margin-top-100 %2$s">',
             'after_widget'  => '</div>',
             'before_title'  => '<h3 class="widget-title">',
             'after_title'   => '</h3>',
@@ -123,7 +123,7 @@ function my_register_sidebars() {
             'description'   => __( 'The left footer sidebar for the theme.' ),
             'before_widget' => '<div id="%1$s" class="widget %2$s">',
             'after_widget'  => '</div>',
-            'before_title'  => '<h3 class="widget-title">',
+            'before_title'  => '<h3 class="widget-title text-center">',
             'after_title'   => '</h3>',
         )
     );
@@ -134,7 +134,7 @@ function my_register_sidebars() {
             'description'   => __( 'The right footer sidebar for the theme.' ),
             'before_widget' => '<div id="%1$s" class="widget %2$s">',
             'after_widget'  => '</div>',
-            'before_title'  => '<h3 class="widget-title">',
+            'before_title'  => '<h3 class="widget-title text-center">',
             'after_title'   => '</h3>',
         )
     );
