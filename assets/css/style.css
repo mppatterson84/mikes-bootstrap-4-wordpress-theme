@@ -4,7 +4,8 @@ body{
     height: auto;
     margin: 0;
     line-height: 1.5;
-	scroll-behavior: smooth;
+    scroll-behavior: smooth;
+    background-color: rgb(245, 255, 250);
 }
 .margin-top-32{
     margin-top: 32px;
@@ -52,6 +53,12 @@ body{
     max-height: 768px;
     background-image: radial-gradient(rgb(224, 243, 255), rgb(135, 206, 250), rgb(98, 191, 228));
     margin-bottom: 0;
+}
+.theLoop .row .col p{
+    padding: 1em 2em 0 1em;
+}
+.theLoop .row .col h2{
+    margin-top: 2em;
 }
 /* .alignfull {
 	margin: auto;
@@ -179,7 +186,7 @@ footer ol, footer ul, footer dl{
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    footer .container{
+    .container{
         max-width: 1340px;
     }
 }
