@@ -110,7 +110,7 @@ footer ol, footer ul, footer dl{
 }
 .scroll > a:hover{
 	background-color: rgba(0,0,0,0.35);
-	color: lightgreen;
+	color: lightyellow;
 }
 .scroll > a:focus{
 	color: lightyellow;
