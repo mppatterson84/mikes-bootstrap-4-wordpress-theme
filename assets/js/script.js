@@ -48,12 +48,12 @@ $(window).resize(function () {
 $(document).scroll(function () {
     var $nav = $("#mainNavbar");
     var $scroll = $(".scroll");
-    var $fas = $(".fas");
+    // var $fas = $(".fas");
     $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
     $scroll.toggleClass("fadeInUp", window.pageYOffset > $nav.height());
     $scroll.toggleClass("fadeOutDown", window.pageYOffset <= $nav.height());
-    $fas.toggleClass("fa-arrow-up", window.pageYOffset > $nav.height());
-    $fas.toggleClass("fa-arrow-down", window.pageYOffset <= $nav.height());
+    // $fas.toggleClass("fa-arrow-up", window.pageYOffset > $nav.height());
+    // $fas.toggleClass("fa-arrow-down", window.pageYOffset <= $nav.height());
 });
 
 $(document).ready(function () {
