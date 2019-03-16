@@ -30,8 +30,7 @@
 <!-- bottom of body -->
 
     <!-- scroll button -->
-    <div class="scroll box-shadow animated fadeOutDown"><a href="#"><i class="fas fa-arrow-down"></i></a></div>
-    <!-- fa-arrow-up -->
+    <div class="scroll box-shadow animated fadeOutDown"><a href="#"><i class="fas fa-arrow-up"></i></a></div>
 
 <?php wp_footer(); ?>
 </body>
