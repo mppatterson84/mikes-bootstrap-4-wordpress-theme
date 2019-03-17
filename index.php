@@ -2,6 +2,7 @@
     <!-- the loop -->
     <div class="container theLoop margin-top-100">
         <div class="row">
+            <?php get_sidebar( 'primary-left' ); ?>
             <div class="col">
                 <?php if ( have_posts() ) : while ( have_posts() ) :   the_post(); ?>
                 <h2>
@@ -14,7 +15,7 @@
                     <p>There no posts to show</p>
                 <?php endif; ?>
             </div>
-            <?php get_sidebar( 'primary' ); ?>
+            <?php get_sidebar( 'primary-right' ); ?>
         </div>
     </div>
     

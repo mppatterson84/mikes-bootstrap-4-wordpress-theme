@@ -2,7 +2,7 @@
         <div class="container">
             <div class="row py-5">
                 <div class="col-md-6">
-                    <?php
+                    <?php if ( has_nav_menu( 'footer-menu' ) ) {
                         wp_nav_menu(
                             array(
                                 'menu'            => 'footer-menu',
@@ -17,7 +17,7 @@
                                 'walker'          => new bs4navwalkerF()
                             )
                         );
-                    ?>
+                    }?>
                     <?php get_sidebar( 'footer-left' ); ?>
                 </div>
                 <?php get_sidebar( 'footer-right' ); ?>

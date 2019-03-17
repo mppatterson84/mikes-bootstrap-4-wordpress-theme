@@ -61,9 +61,20 @@ function my_register_sidebars() {
     /* Register the 'primary' sidebar. */
     register_sidebar(
         array(
-            'id'            => 'primary',
-            'name'          => __( 'Primary Sidebar' ),
-            'description'   => __( 'The primary sidebar for the theme.' ),
+            'id'            => 'primary-left',
+            'name'          => __( 'Left Primary Sidebar' ),
+            'description'   => __( 'The left primary sidebar for the theme.' ),
+            'before_widget' => '<div id="%1$s" class="widget margin-top-100 %2$s">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h3 class="widget-title">',
+            'after_title'   => '</h3>',
+            )
+        );
+    register_sidebar(
+        array(
+            'id'            => 'primary-right',
+            'name'          => __( 'Right Primary Sidebar' ),
+            'description'   => __( 'The right primary sidebar for the theme.' ),
             'before_widget' => '<div id="%1$s" class="widget margin-top-100 %2$s">',
             'after_widget'  => '</div>',
             'before_title'  => '<h3 class="widget-title">',

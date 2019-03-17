@@ -70,7 +70,11 @@ body{
 	max-width: 75vw;
 	width: 75vw;
 } */
-#sidebar-primary .widget{
+#sidebar-primary-left .widget{
+    padding-right: 1em;
+    border-right: 1px solid black;
+}
+#sidebar-primary-right .widget{
     padding-left: 1em;
     border-left: 1px solid black;
 }
