@@ -116,7 +116,7 @@ class bs4Navwalker extends Walker_Nav_Menu
             $atts ['class']= $manual_class;
         }
         if (in_array('current-menu-item', $item->classes)) {
-            $atts['class'] .= ' active';
+            $atts['class'] .= ' active animated flash';
         }
         // print_r($item);
         //
