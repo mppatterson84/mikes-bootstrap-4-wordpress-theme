@@ -14,6 +14,11 @@
     <title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
 
     <?php wp_head(); ?>
+    <style>
+      .jumbotron-image{
+        background:url(<?php echo get_theme_mod('jumbotron_image', get_bloginfo('template_url').'/assets/images/jumbotron.jpg'); ?>) no-repeat center center;
+      }
+    </style>
 </head>
 
 <body <?php body_class(); ?>>

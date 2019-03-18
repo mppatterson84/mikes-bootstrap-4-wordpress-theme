@@ -17,6 +17,10 @@ function register_my_menus() {
  }
  add_action( 'init', 'register_my_menus' );
 
+ 
+// Customizer File
+require get_template_directory() . '/inc/customizer.php';
+
 //stylesheets
 function styles()
 {
