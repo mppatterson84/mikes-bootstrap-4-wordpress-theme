@@ -24,7 +24,12 @@
 <body <?php body_class(); ?>>
 
     <nav id="mainNavbar" class="navbar navbar-expand-md fixed-top navbar-light nav-pills">
-        <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo('name'); ?></a>
+        <?php if( get_theme_mod( 'navbar_brand_display', 'show' ) == 'show' ) : ?>
+            <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo('name'); ?></a>
+        <?php endif ?>
+        <?php if( get_theme_mod( 'navbar_tagline_display', 'show' ) == 'show' ) : ?>
+            <div><?php bloginfo( 'description' ); ?></div>
+        <?php endif ?>
         <button class="navbar-toggler hamburger hamburger--slider animated rubberBand box-shadow" type="button"
             data-toggle="collapse" data-target="#bs4navbar"
             aria-controls="bs4navbar" aria-expanded="false"

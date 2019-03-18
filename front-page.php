@@ -1,6 +1,8 @@
 <?php get_header(); ?>
 
-<?php get_template_part( 'template-parts/cover' ); ?>
+<?php if( get_theme_mod( 'jumbotron_display', 'show' ) == 'show' ) : ?>
+    <?php get_template_part( 'template-parts/cover' ); ?>
+<?php endif ?>
 
     <!-- the loop -->
     <div class="container theLoop margin-top-100">
