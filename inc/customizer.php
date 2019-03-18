@@ -7,32 +7,32 @@
       'priority'    => 90
     ));
     $wp_customize->add_setting( 'navbar_brand_display' , array(
-      'default'     => true,
+      'default'     => 'show',
       'transport'   => 'refresh',
     ));
     $wp_customize->add_control( 'navbar_brand_display', array(
-      'label' => 'Navbar Brand Display',
-      'section' => 'navbar',
+      'label' => 'Site Title Display',
+      'section' => 'title_tagline',
       'settings' => 'navbar_brand_display',
       'type' => 'radio',
       'choices' => array(
-        'show' => 'Show Navbar Brand',
-        'hide' => 'Hide Navbar Brand',
+        'show' => 'Show Site Title',
+        'hide' => 'Hide Site Title',
       ),
       'priority'  => 1
     ));
     $wp_customize->add_setting( 'navbar_tagline_display' , array(
-      'default'     => true,
+      'default'     => 'show',
       'transport'   => 'refresh',
     ));
     $wp_customize->add_control( 'navbar_tagline_display', array(
-      'label' => 'Navbar Tagline Display',
-      'section' => 'navbar',
+      'label' => 'Tagline Display',
+      'section' => 'title_tagline',
       'settings' => 'navbar_tagline_display',
       'type' => 'radio',
       'choices' => array(
-        'show' => 'Show Navbar Tagline',
-        'hide' => 'Hide Navbar Tagline',
+        'show' => 'Show Tagline',
+        'hide' => 'Hide Tagline',
       ),
       'priority'  => 2
     ));
@@ -43,7 +43,7 @@
       'priority'    => 130
     ));
     $wp_customize->add_setting( 'jumbotron_display' , array(
-      'default'     => true,
+      'default'     => 'show',
       'transport'   => 'refresh',
     ));
     $wp_customize->add_control( 'jumbotron_display', array(
@@ -86,7 +86,7 @@
       'priority'  => 4
     ));
     $wp_customize->add_setting( 'jumbotron_btn_display' , array(
-      'default'     => true,
+      'default'     => 'show',
       'transport'   => 'refresh',
     ));
     $wp_customize->add_control( 'jumbotron_btn_display', array(
