@@ -17,7 +17,7 @@
       'type' => 'radio',
       'choices' => array(
         'show' => 'Show Site Title',
-        'hide' => 'Hide Site Title',
+        'hide' => 'Hide Site Title'
       ),
       'priority'  => 1
     ));
@@ -32,7 +32,7 @@
       'type' => 'radio',
       'choices' => array(
         'show' => 'Show Tagline',
-        'hide' => 'Hide Tagline',
+        'hide' => 'Hide Tagline'
       ),
       'priority'  => 2
     ));
@@ -53,7 +53,7 @@
       'type' => 'radio',
       'choices' => array(
         'show' => 'Show Jumbotron',
-        'hide' => 'Hide Jumbotron',
+        'hide' => 'Hide Jumbotron'
       ),
       'priority'  => 1
     ));
@@ -96,7 +96,7 @@
       'type' => 'radio',
       'choices' => array(
         'show' => 'Show Button',
-        'hide' => 'Hide Button',
+        'hide' => 'Hide Button'
       ),
       'priority'  => 5
     ));
