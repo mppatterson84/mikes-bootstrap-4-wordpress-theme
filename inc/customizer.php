@@ -8,7 +8,7 @@
     ));
     $wp_customize->add_setting( 'navbar_brand_display' , array(
       'default'     => 'show',
-      'transport'   => 'refresh',
+      'transport'   => 'refresh'
     ));
     $wp_customize->add_control( 'navbar_brand_display', array(
       'label' => 'Site Title Display',
@@ -23,7 +23,7 @@
     ));
     $wp_customize->add_setting( 'navbar_tagline_display' , array(
       'default'     => 'show',
-      'transport'   => 'refresh',
+      'transport'   => 'refresh'
     ));
     $wp_customize->add_control( 'navbar_tagline_display', array(
       'label' => 'Tagline Display',
@@ -87,7 +87,7 @@
     ));
     $wp_customize->add_setting( 'jumbotron_btn_display' , array(
       'default'     => 'show',
-      'transport'   => 'refresh',
+      'transport'   => 'refresh'
     ));
     $wp_customize->add_control( 'jumbotron_btn_display', array(
       'label' => 'Button Display',
