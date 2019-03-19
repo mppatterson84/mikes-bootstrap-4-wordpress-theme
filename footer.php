@@ -2,7 +2,7 @@
         <div class="container">
             <div class="row py-5">
                 <div class="col-md-6">
-                    <?php if ( has_nav_menu( 'footer-menu' ) ) {
+                    <?php if ( has_nav_menu( 'footer-menu', 'top-menu' ) ) {
                         wp_nav_menu(
                             array(
                                 'menu'            => 'footer-menu',
