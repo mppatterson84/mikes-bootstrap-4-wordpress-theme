@@ -3,8 +3,8 @@
 // add_theme_support( 'align-wide' );
 
 // Include custom navwalker
-require_once('bs4navwalker.php');
-require_once('bs4navwalkerF.php');
+require_once(get_template_directory() . '/inc/bs4navwalker.php');
+require_once(get_template_directory() . '/inc/bs4navwalkerF.php');
 
 // Register WordPress nav menu
 function register_my_menus() {
