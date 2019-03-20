@@ -48,7 +48,7 @@
                     'theme_location'  => 'top-menu',
                     'container'       => 'div',
                     'container_id'    => 'bs4navbar',
-                    'container_class' => 'collapse navbar-collapse',
+                    'container_class' => 'collapse navbar-collapse top-nav',
                     'menu_id'         => 'primary-menu',
                     'menu_class'      => 'navbar-nav ml-auto text-center animated pulse',
                     'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',

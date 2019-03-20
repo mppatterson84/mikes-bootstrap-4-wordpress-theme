@@ -9,6 +9,7 @@
                                 'theme_location'  => 'footer-menu',
                                 'container'       => 'div',
                                 'container_id'    => 'bs4navbarF',
+                                'container_class' => 'footer-nav',
                                 'menu_id'         => 'footer-menu',
                                 'menu_class'      => 'nav flex-column text-center mx-auto p-0',
                                 'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
