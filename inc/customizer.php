@@ -40,7 +40,8 @@
     $wp_customize->add_section('jumbotron', array(
       'title'   => __('Jumbotron', 'mikes-wp-bs4'),
       'description' => sprintf(__('Options for the Jumbotron','mikes-wp-bs4')),
-      'priority'    => 130
+      'priority'    => 130,
+      'active_callback' => 'is_front_page'
     ));
     $wp_customize->add_setting( 'jumbotron_display' , array(
       'default'     => 'show',
@@ -65,7 +66,8 @@
       'label'   => __('Jumbotron Image', 'mikes-wp-bs4'),
       'section' => 'jumbotron',
       'settings' => 'jumbotron_image',
-      'priority'  => 2
+      'priority'  => 2,
+      'active_callback' => 'jumbotron_display_callback'
     )));
     $wp_customize->add_setting('jumbotron_heading', array(
       'default'   => _x('Bootstrap 4', 'mikes-wp-bs4'),
@@ -74,7 +76,8 @@
     $wp_customize->add_control('jumbotron_heading', array(
       'label'   => __('Heading', 'mikes-wp-bs4'),
       'section' => 'jumbotron',
-      'priority'  => 3
+      'priority'  => 3,
+      'active_callback' => 'jumbotron_display_callback'
     ));
     $wp_customize->add_setting('jumbotron_text', array(
       'default'   => _x('Wordpress and Bootstrap 4 theme with a front page jumbotron cover.', 'mikes-wp-bs4'),
@@ -83,7 +86,8 @@
     $wp_customize->add_control('jumbotron_text', array(
       'label'   => __('Text', 'mikes-wp-bs4'),
       'section' => 'jumbotron',
-      'priority'  => 4
+      'priority'  => 4,
+      'active_callback' => 'jumbotron_display_callback'
     ));
     $wp_customize->add_setting( 'jumbotron_btn_display' , array(
       'default'     => 'show',
@@ -98,7 +102,8 @@
         'show' => 'Show Button',
         'hide' => 'Hide Button'
       ),
-      'priority'  => 5
+      'priority'  => 5,
+      'active_callback' => 'jumbotron_display_callback'
     ));
     $wp_customize->add_setting('btn_url', array(
       'default'   => _x('about', 'mikes-wp-bs4'),
@@ -107,7 +112,8 @@
     $wp_customize->add_control('btn_url', array(
       'label'   => __('Button URL', 'mikes-wp-bs4'),
       'section' => 'jumbotron',
-      'priority'  => 6
+      'priority'  => 6,
+      'active_callback' => 'jumbotron_display_callback'
     ));
     $wp_customize->add_setting('btn_text', array(
       'default'   => _x('Find Out More', 'mikes-wp-bs4'),
@@ -116,7 +122,15 @@
     $wp_customize->add_control('btn_text', array(
       'label'   => __('Button Text', 'mikes-wp-bs4'),
       'section' => 'jumbotron',
-      'priority'  => 7
+      'priority'  => 7,
+      'active_callback' => 'jumbotron_display_callback'
     ));
+    function jumbotron_display_callback( $control ) {
+      if ( $control->manager->get_setting('jumbotron_display')->value() == 'show' ) {
+          return true;
+      } else {
+          return false;
+      }
+    }
   }
   add_action('customize_register', 'wp_bs4_customize_register');
