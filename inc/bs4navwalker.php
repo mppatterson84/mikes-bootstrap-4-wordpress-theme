@@ -105,7 +105,7 @@ class bs4Navwalker extends Walker_Nav_Menu
         $atts['href']   = ! empty( $item->url )        ? $item->url        : '';
         // New
         if ($depth === 0) {
-            $atts['class'] = 'nav-link btn btn-light m-1 box-shadow';
+            $atts['class'] = 'nav-link m-1 btn btn-light box-shadow';
         }
         if ($depth === 0 && in_array('menu-item-has-children', $classes)) {
             $atts['class']       .= ' dropdown-toggle';

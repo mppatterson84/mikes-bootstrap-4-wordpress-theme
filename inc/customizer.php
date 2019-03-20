@@ -1,27 +1,27 @@
 <?php
   function wp_bs4_customize_register($wp_customize){
     // Navbar Section
-    // $wp_customize->add_section('navbar_menu', array(
-    //   'title'   => __('Navbar Menu', 'mikes-wp-bs4'),
-    //   'description' => sprintf(__('Options for the Navbar','mikes-wp-bs4')),
-    //   'priority'    => 90
-    // ));
-    // $wp_customize->add_setting( 'nav_menu_btn' , array(
-    //   'default'   => 'button_on',
-    //   'transport' => 'refresh'
-    // ));
-    // $wp_customize->add_control( 'nav_menu_btn' , array(
-    //   'label' => 'Link Button Display',
-    //   'section' => 'navbar_menu',
-    //   'settings' => 'nav_menu_btn',
-    //   'type' => 'radio',
-    //   'choices' => array(
-    //     'button_on' => 'Show Link As Button',
-    //     'button_off' => 'Show Plain Link'
-    //   ),
-    //   'priority'  => 1
-    // ));
-
+    $wp_customize->add_section('navbar_menu', array(
+      'title'   => __('Navbar Menu', 'mikes-wp-bs4'),
+      'description' => sprintf(__('Options for the Navbar','mikes-wp-bs4')),
+      'priority'    => 90
+    ));
+    $wp_customize->add_setting( 'nav_menu_display' , array(
+      'default'   => 'button_on',
+      'transport' => 'refresh'
+    ));
+    $wp_customize->add_control( 'nav_menu_display' , array(
+      'label' => 'Link Button Display',
+      'section' => 'navbar_menu',
+      'settings' => 'nav_menu_display',
+      'type' => 'radio',
+      'choices' => array(
+        'button_on' => 'Show Link As Button',
+        'button_off' => 'Show Plain Link',
+      ),
+      'priority'  => 1
+    ));
+    //Site Identity Section
     $wp_customize->add_setting( 'navbar_brand_display' , array(
       'default'     => 'show',
       'transport'   => 'refresh'
@@ -150,3 +150,14 @@
     }
   }
   add_action('customize_register', 'wp_bs4_customize_register');
+
+  add_action( 'wp_head', 'cd_customizer_css');
+  function cd_customizer_css(){
+    ?>
+      <style>
+        .jumbotron-image{
+          background:url(<?php echo get_theme_mod('jumbotron_image', get_bloginfo('template_url').'/assets/images/jumbotron.jpg'); ?>) no-repeat center center;
+        }
+      </style>
+    <?php
+  }
