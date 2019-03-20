@@ -1,11 +1,27 @@
 <?php
   function wp_bs4_customize_register($wp_customize){
     // Navbar Section
-    $wp_customize->add_section('navbar', array(
-      'title'   => __('Navbar', 'mikes-wp-bs4'),
-      'description' => sprintf(__('Options for the Navbar','mikes-wp-bs4')),
-      'priority'    => 90
-    ));
+    // $wp_customize->add_section('navbar_menu', array(
+    //   'title'   => __('Navbar Menu', 'mikes-wp-bs4'),
+    //   'description' => sprintf(__('Options for the Navbar','mikes-wp-bs4')),
+    //   'priority'    => 90
+    // ));
+    // $wp_customize->add_setting( 'nav_menu_btn' , array(
+    //   'default'   => 'button_on',
+    //   'transport' => 'refresh'
+    // ));
+    // $wp_customize->add_control( 'nav_menu_btn' , array(
+    //   'label' => 'Link Button Display',
+    //   'section' => 'navbar_menu',
+    //   'settings' => 'nav_menu_btn',
+    //   'type' => 'radio',
+    //   'choices' => array(
+    //     'button_on' => 'Show Link As Button',
+    //     'button_off' => 'Show Plain Link'
+    //   ),
+    //   'priority'  => 1
+    // ));
+
     $wp_customize->add_setting( 'navbar_brand_display' , array(
       'default'     => 'show',
       'transport'   => 'refresh'
