@@ -6,18 +6,18 @@
       'description' => sprintf(__('Options for the Navbar','mikes-wp-bs4')),
       'priority'    => 90
     ));
-    $wp_customize->add_setting( 'nav_menu_display' , array(
-      'default'   => 'button_on',
+    $wp_customize->add_setting( 'nav_menu_style' , array(
+      'default'   => 'style_1',
       'transport' => 'refresh'
     ));
-    $wp_customize->add_control( 'nav_menu_display' , array(
-      'label' => 'Link Button Display',
+    $wp_customize->add_control( 'nav_menu_style' , array(
+      'label' => 'Menu Style Selection',
       'section' => 'navbar_menu',
-      'settings' => 'nav_menu_display',
+      'settings' => 'nav_menu_style',
       'type' => 'radio',
       'choices' => array(
-        'button_on' => 'Show Link As Button',
-        'button_off' => 'Show Plain Link',
+        'style_1' => 'Style 1',
+        'style_2' => 'Style 2',
       ),
       'priority'  => 1
     ));
